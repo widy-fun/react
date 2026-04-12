@@ -15,6 +15,13 @@
     "url": "git+https://github.com/widy-fun/react.git"
   },
   "homepage": "https://widy.fun",
+  "keywords": [
+    "react",
+    "obs",
+    "twitch",
+    "youtube",
+    "donation"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
