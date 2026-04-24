@@ -1,4 +1,4 @@
-import type { WidgetAction } from "@widy/sdk";
+import type { WidgetQuery } from "@widy/sdk";
 import { useCallback, useEffect, useState } from "react";
 import useBridge from "./useBridge";
 
@@ -6,12 +6,12 @@ interface IConfig {
 	skip?: boolean;
 }
 
-export function useWidgetAction<P, R>({
+export function useWidgetQuery<P, R>({
 	scope,
 	payload,
 	config,
 }: {
-	scope: WidgetAction;
+	scope: WidgetQuery;
 	payload?: P;
 	config?: IConfig;
 }) {
@@ -20,11 +20,10 @@ export function useWidgetAction<P, R>({
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState<Error>();
 
-	const fetch = useCallback(async () => {
+	const refetch = useCallback(async () => {
 		setLoading(true);
 		try {
 			const result = await bridge.action<P, R>(scope, payload);
-
 			setData(result);
 		} catch (err) {
 			setError(err as Error);
@@ -35,8 +34,8 @@ export function useWidgetAction<P, R>({
 
 	useEffect(() => {
 		if (config?.skip) return;
-		fetch();
-	}, [config, fetch]);
+		refetch();
+	}, [config, refetch]);
 
-	return { data, loading, error, fetch };
+	return { data, loading, error, fetch: refetch };
 }
