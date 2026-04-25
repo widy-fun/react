@@ -37,5 +37,5 @@ export function useWidgetQuery<P, R>({
 		refetch();
 	}, [config, refetch]);
 
-	return { data, loading, error, fetch: refetch };
+	return { data, loading, error, refetch };
 }
