@@ -20,22 +20,25 @@ export function useWidgetQuery<P, R>({
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState<Error>();
 
+	const payloadKey = JSON.stringify(payload);
+	const skip = config?.skip;
+
 	const refetch = useCallback(async () => {
 		setLoading(true);
 		try {
-			const result = await bridge.action<P, R>(scope, payload);
+			const result = await bridge.action<P, R>(scope, JSON.parse(payloadKey));
 			setData(result);
 		} catch (err) {
 			setError(err as Error);
 		} finally {
 			setLoading(false);
 		}
-	}, [scope, payload, bridge]);
+	}, [scope, payloadKey, bridge]);
 
 	useEffect(() => {
-		if (config?.skip) return;
+		if (skip) return;
 		refetch();
-	}, [config, refetch]);
+	}, [skip, refetch]);
 
 	return { data, loading, error, refetch };
 }
