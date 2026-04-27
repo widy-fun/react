@@ -4,39 +4,38 @@ import useBridge from "./useBridge";
 
 type MutationState<R> = {
 	loading: boolean;
-	error: Error | null;
-	data: R | null;
+	error?: unknown;
+	data?: R;
 };
 
-type UseWidgetMutationReturn<P, R> = {
-	trigger: (payload?: P) => Promise<R>;
+type UseWidgetMutationReturn<A, R> = {
+	trigger: (arg?: A) => Promise<R>;
 	loading: boolean;
-	error: Error | null;
-	data: R | null;
+	error?: unknown;
+	data?: R;
 };
 
-export function useWidgetMutation<P, R>({
+export function useWidgetMutation<A, R>({
 	scope,
 }: {
 	scope: WidgetMutation;
-}): UseWidgetMutationReturn<P, R> {
+}): UseWidgetMutationReturn<A, R> {
 	const bridge = useBridge();
 	const [state, setState] = useState<MutationState<R>>({
 		loading: false,
-		error: null,
-		data: null,
+		error: undefined,
+		data: undefined,
 	});
 
 	const trigger = useCallback(
-		async (payload?: P): Promise<R> => {
-			setState({ loading: true, error: null, data: null });
+		async (arg?: A): Promise<R> => {
+			setState({ loading: true, error: undefined, data: undefined });
 			try {
-				const result = await bridge.action<P, R>(scope, payload);
-				setState({ loading: false, error: null, data: result });
-				return result;
-			} catch (err) {
-				const error = err as Error;
-				setState({ loading: false, error, data: null });
+				const data = await bridge.action<A, R>(scope, arg);
+				setState({ loading: false, error: undefined, data });
+				return data;
+			} catch (error) {
+				setState({ loading: false, error, data: undefined });
 				throw error;
 			}
 		},

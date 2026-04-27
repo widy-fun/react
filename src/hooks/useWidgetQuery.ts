@@ -6,35 +6,35 @@ interface IConfig {
 	skip?: boolean;
 }
 
-export function useWidgetQuery<P, R>({
+export function useWidgetQuery<A, R>({
 	scope,
-	payload,
+	arg,
 	config,
 }: {
 	scope: WidgetQuery;
-	payload?: P;
+	arg?: A;
 	config?: IConfig;
 }) {
 	const bridge = useBridge();
 	const [data, setData] = useState<R>();
 	const [loading, setLoading] = useState(false);
-	const [error, setError] = useState<Error>();
+	const [error, setError] = useState<unknown>();
 
-	const payloadKey = payload ? JSON.stringify(payload) : undefined;
+	const argKey = arg ? JSON.stringify(arg) : undefined;
 	const skip = config?.skip;
 
 	const refetch = useCallback(async () => {
-		const payloadObj = payloadKey ? JSON.parse(payloadKey) : undefined;
+		const argObj = argKey ? JSON.parse(argKey) : undefined;
 		setLoading(true);
 		try {
-			const result = await bridge.action<P, R>(scope, payloadObj);
+			const result = await bridge.action<A, R>(scope, argObj);
 			setData(result);
 		} catch (err) {
-			setError(err as Error);
+			setError(err);
 		} finally {
 			setLoading(false);
 		}
-	}, [scope, payloadKey, bridge]);
+	}, [scope, argKey, bridge]);
 
 	useEffect(() => {
 		if (skip) return;
