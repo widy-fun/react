@@ -1,6 +1,6 @@
 {
   "name": "@widy/react",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "React hooks and context for seamless Widy widget integration.",
   "license": "ISC",
   "author": "ik1s3v",

@@ -29,6 +29,7 @@ export function useWidgetQuery<A, R>({
 		try {
 			const result = await bridge.action<A, R>(scope, argObj);
 			setData(result);
+			return result;
 		} catch (err) {
 			setError(err);
 		} finally {
