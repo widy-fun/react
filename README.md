@@ -41,15 +41,47 @@ function MyComponent() {
 
 ### Performing Widget Actions
 
-Use the `useWidgetAction` hook to execute actions:
+Use the `useWidgetMutation` hook to execute mutations:
 
 ```tsx
-import { useWidgetAction } from '@widy/react';
+import { useWidgetMutation } from '@widy/react';
 
 function MyComponent() {
-  const { data, loading, error, fetch } = useWidgetAction({
+  const { data, loading, error, trigger } = useWidgetMutation({
+    scope: 'widgets:goals.create',
+  });
+
+  const handleCreate = async () => {
+    try {
+      const result = await trigger({ type: 'donation', amount: 100 });
+      console.log('Created:', result);
+    } catch (err) {
+      console.error('Error:', err);
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={handleCreate} disabled={loading}>
+        {loading ? 'Creating...' : 'Create Goal'}
+      </button>
+      {error && <div>Error: {error.message}</div>}
+    </div>
+  );
+}
+```
+
+### Querying Widget Data
+
+Use the `useWidgetQuery` hook to fetch data:
+
+```tsx
+import { useWidgetQuery } from '@widy/react';
+
+function MyComponent() {
+  const { data, loading, error, refetch } = useWidgetQuery({
     scope: 'widgets:goals.read',
-    payload: { type: GoalType.Donation },
+    arg: { type: 'donation' },
   });
 
   if (loading) return <div>Loading...</div>;
@@ -81,8 +113,9 @@ function MyComponent() {
 
 ### Hooks
 
-- `useBridge()`: Returns the bridge instance. Must be used within a `BridgeProvider`.
-- `useWidgetAction<P, R>(options)`: Performs a widget action and returns `{ data, loading, error, fetch }`.
+- `useBridge()`: Returns the bridge instance. Must be used within a `BridgeContext.Provider`.
+- `useWidgetMutation<A, R>(options)`: Performs a widget mutation and returns `{ trigger, loading, error, data }`.
+- `useWidgetQuery<A, R>(options)`: Performs a widget query and returns `{ data, loading, error, refetch }`.
 - `useWidgetSubscription<T>(scope, handler)`: Subscribes to widget events.
 
 ### Context
@@ -98,5 +131,7 @@ function MyComponent() {
 - @widy/sdk ^1.0.1
 
 ## License
+
+ISC
 
 ISC
