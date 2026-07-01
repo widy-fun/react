@@ -1,6 +1,6 @@
 {
   "name": "@widy/react",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "React hooks and context for seamless Widy widget integration.",
   "license": "ISC",
   "author": "ik1s3v",
@@ -37,6 +37,7 @@
     "typescript": "^6.0.2"
   },
   "dependencies": {
-    "@widy/sdk": "^1.0.13"
+    "@mui/material": "^9.1.2",
+    "@widy/sdk": "^1.0.27"
   }
 }

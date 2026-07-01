@@ -109,6 +109,28 @@ function MyComponent() {
 }
 ```
 
+## Theme
+
+This package exports a Material UI theme based on `@widy/sdk`'s `darkTheme`. Import it from the repository and wrap your app with MUI's `ThemeProvider`:
+
+```tsx
+import { ThemeProvider } from '@mui/material/styles';
+import { dark } from '@widy/react';
+
+function App() {
+  return (
+    <ThemeProvider theme={dark}>
+      <BridgeContext.Provider value={bridge}>
+        <MyWidget />
+      </BridgeContext.Provider>
+    </ThemeProvider>
+  );
+}
+```
+
+The exported `dark` theme is created from `darkTheme` in `@widy/sdk` and is typed as a MUI `ThemeOptions`.
+
+
 ## API
 
 ### Hooks
@@ -122,16 +144,8 @@ function MyComponent() {
 
 - `BridgeContext`: React context for the widget bridge.
 
-## Peer Dependencies
-
-- React ^18.0.0 || ^19.0.0
-
-## Dependencies
-
-- @widy/sdk ^1.0.1
 
 ## License
 
 ISC
 
-ISC
