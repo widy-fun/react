@@ -144,6 +144,11 @@ The exported `dark` theme is created from `darkTheme` in `@widy/sdk` and is type
 
 - `BridgeContext`: React context for the widget bridge.
 
+### Redux
+
+- `snackBarSlice`: A Redux slice for showing snack bar notifications.
+- `showSnackBar({ message, alertSeverity })`: Action to display the snack bar with a message and severity.
+- `hideSnackBar()`: Action to hide the snack bar.
 
 ## License
 
