@@ -1,0 +1,37 @@
+{
+	"assistant": "Assistente",
+	"message": {
+		"skip": "Saltar",
+		"replay": "Reproduzir novamente",
+		"donated": "{{user_name}} doou {{amount}} {{currency}}",
+		"redemption": "{{user_name}} resgatou {{title}} por {{cost}}",
+		"followed": "{{user_name}} começou a seguir",
+		"subscribed": "{{user_name}} subscreveu",
+		"gifted_subscriptions": "{{user_name}} ofereceu {{total}} subscrições",
+		"raided_with": "{{user_name}} fez uma raid com {{viewers}} espectadores",
+		"command_action": "{{user_name}} utilizou o comando {{command_name}}",
+		"assistant_ban_user": "{{user_name}} foi banido",
+		"assistant_unban_user": "Banimento de {{user_name}} removido",
+		"assistant_pin_message": "Fixar a mensagem {{message}}",
+		"assistant_change_channel_category": "Alterar a categoria para {{category}}",
+		"assistant_change_channel_title": "Alterar o título para {{title}}",
+		"assistant_add_emote_mode": "Ativar o modo apenas com emotes",
+		"assistant_remove_emote_mode": "Desativar o modo apenas com emotes",
+		"assistant_add_follow_mode": "Ativar o modo apenas para seguidores",
+		"assistant_remove_follow_mode": "Desativar o modo apenas para seguidores",
+		"assistant_add_slow_mode": "Ativar o modo lento",
+		"assistant_remove_slow_mode": "Desativar o modo lento",
+		"assistant_add_subscribe_mode": "Ativar o modo apenas para subscritores",
+		"assistant_remove_subscribe_mode": "Desativar o modo apenas para subscritores"
+	},
+	"filter": {
+		"title": "Filtrar mensagens",
+		"exclude_donations": "Excluir donativos",
+		"exclude_follows": "Excluir novos seguidores",
+		"exclude_subscriptions": "Excluir subscrições",
+		"exclude_raids": "Excluir raids",
+		"exclude_redemptions": "Excluir resgates",
+		"exclude_commands_actions": "Excluir ações de comandos",
+		"exclude_assistant_actions": "Excluir ações do assistente"
+	}
+}

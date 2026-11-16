@@ -1,0 +1,37 @@
+{
+	"assistant": "Ассистент",
+	"message": {
+		"skip": "Пропустить",
+		"replay": "Повторить",
+		"donated": "{{user_name}} отправил(-а) пожертвование: {{amount}} {{currency}}",
+		"redemption": "{{user_name}} активировал(-а) награду {{title}} за {{cost}}",
+		"followed": "{{user_name}} подписался(-ась) на канал",
+		"subscribed": "{{user_name}} оформил(-а) подписку",
+		"gifted_subscriptions": "{{user_name}} подарил(-а) {{total}} подписок",
+		"raided_with": "{{user_name}} совершил(-а) рейд с {{viewers}} зрителями",
+		"command_action": "{{user_name}} использовал(-а) команду {{command_name}}",
+		"assistant_ban_user": "Пользователь {{user_name}} заблокирован",
+		"assistant_unban_user": "Блокировка пользователя {{user_name}} снята",
+		"assistant_pin_message": "Закрепить сообщение {{message}}",
+		"assistant_change_channel_category": "Изменить категорию на {{category}}",
+		"assistant_change_channel_title": "Изменить название на {{title}}",
+		"assistant_add_emote_mode": "Включить режим только эмодзи",
+		"assistant_remove_emote_mode": "Выключить режим только эмодзи",
+		"assistant_add_follow_mode": "Включить режим только для подписчиков",
+		"assistant_remove_follow_mode": "Выключить режим только для подписчиков",
+		"assistant_add_slow_mode": "Включить медленный режим",
+		"assistant_remove_slow_mode": "Выключить медленный режим",
+		"assistant_add_subscribe_mode": "Включить режим только для платных подписчиков",
+		"assistant_remove_subscribe_mode": "Выключить режим только для платных подписчиков"
+	},
+	"filter": {
+		"title": "Фильтр сообщений",
+		"exclude_donations": "Исключить пожертвования",
+		"exclude_follows": "Исключить подписки на канал",
+		"exclude_subscriptions": "Исключить платные подписки",
+		"exclude_raids": "Исключить рейды",
+		"exclude_redemptions": "Исключить активации наград",
+		"exclude_commands_actions": "Исключить действия команд",
+		"exclude_assistant_actions": "Исключить действия ассистента"
+	}
+}

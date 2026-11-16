@@ -1,0 +1,37 @@
+{
+	"assistant": "Assistant",
+	"message": {
+		"skip": "Skip",
+		"replay": "Replay",
+		"donated": "{{user_name}} donated {{amount}} {{currency}}",
+		"redemption": "{{user_name}} redemption {{title}} {{cost}}",
+		"followed": "{{user_name}} followed",
+		"subscribed": "{{user_name}} subscribed",
+		"gifted_subscriptions": "{{user_name}} gift {{total}} subscriptions",
+		"raided_with": "{{user_name}} raided with {{viewers}} viewers",
+		"command_action": "{{user_name}} used command {{command_name}}",
+		"assistant_ban_user": "Banned {{user_name}}",
+		"assistant_unban_user": "Unban {{user_name}}",
+		"assistant_pin_message": "Pin message {{message}}",
+		"assistant_change_channel_category": "Change category to {{category}}",
+		"assistant_change_channel_title": "Change title to {{title}}",
+		"assistant_add_emote_mode": "Add emote mode",
+		"assistant_remove_emote_mode": "Remove emote mode",
+		"assistant_add_follow_mode": "Add follow mode",
+		"assistant_remove_follow_mode": "Remove follow mode",
+		"assistant_add_slow_mode": "Add slow mode",
+		"assistant_remove_slow_mode": "Remove slow mode",
+		"assistant_add_subscribe_mode": "Add subscribe mode",
+		"assistant_remove_subscribe_mode": "Remove subscribe mode"
+	},
+	"filter": {
+		"title": "Filter messages",
+		"exclude_donations": "Exclude donations",
+		"exclude_follows": "Exclude follows",
+		"exclude_subscriptions": "Exclude subscriptions",
+		"exclude_raids": "Exclude raids",
+		"exclude_redemptions": "Exclude redemptions",
+		"exclude_commands_actions": "Exclude commands actions",
+		"exclude_assistant_actions": "Exclude assistant actions"
+	}
+}

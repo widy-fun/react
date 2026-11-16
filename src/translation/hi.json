@@ -1,0 +1,37 @@
+{
+	"assistant": "सहायक",
+	"message": {
+		"skip": "छोड़ें",
+		"replay": "दोबारा चलाएँ",
+		"donated": "{{user_name}} ने {{amount}} {{currency}} दान किए",
+		"redemption": "{{user_name}} ने {{title}} रिडीम किया ({{cost}})",
+		"followed": "{{user_name}} ने फ़ॉलो किया",
+		"subscribed": "{{user_name}} ने सब्सक्राइब किया",
+		"gifted_subscriptions": "{{user_name}} ने {{total}} सब्सक्रिप्शन उपहार में दिए",
+		"raided_with": "{{user_name}} ने {{viewers}} दर्शकों के साथ रेड किया",
+		"command_action": "{{user_name}} ने {{command_name}} कमांड का इस्तेमाल किया",
+		"assistant_ban_user": "{{user_name}} को बैन किया गया",
+		"assistant_unban_user": "{{user_name}} को अनबैन किया गया",
+		"assistant_pin_message": "संदेश पिन करें: {{message}}",
+		"assistant_change_channel_category": "श्रेणी बदलकर {{category}} करें",
+		"assistant_change_channel_title": "शीर्षक बदलकर {{title}} करें",
+		"assistant_add_emote_mode": "इमोट मोड चालू करें",
+		"assistant_remove_emote_mode": "इमोट मोड बंद करें",
+		"assistant_add_follow_mode": "फ़ॉलोअर मोड चालू करें",
+		"assistant_remove_follow_mode": "फ़ॉलोअर मोड बंद करें",
+		"assistant_add_slow_mode": "स्लो मोड चालू करें",
+		"assistant_remove_slow_mode": "स्लो मोड बंद करें",
+		"assistant_add_subscribe_mode": "सब्सक्राइबर मोड चालू करें",
+		"assistant_remove_subscribe_mode": "सब्सक्राइबर मोड बंद करें"
+	},
+	"filter": {
+		"title": "संदेश फ़िल्टर करें",
+		"exclude_donations": "दान शामिल न करें",
+		"exclude_follows": "फ़ॉलो शामिल न करें",
+		"exclude_subscriptions": "सब्सक्रिप्शन शामिल न करें",
+		"exclude_raids": "रेड शामिल न करें",
+		"exclude_redemptions": "रिडेम्पशन शामिल न करें",
+		"exclude_commands_actions": "कमांड की कार्रवाइयाँ शामिल न करें",
+		"exclude_assistant_actions": "सहायक की कार्रवाइयाँ शामिल न करें"
+	}
+}

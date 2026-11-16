@@ -1,0 +1,37 @@
+{
+	"assistant": "Помічник",
+	"message": {
+		"skip": "Пропустити",
+		"replay": "Повторити",
+		"donated": "{{user_name}} надіслав(-ла) донат на суму {{amount}} {{currency}}",
+		"redemption": "{{user_name}} використав(-ла) винагороду {{title}} за {{cost}}",
+		"followed": "{{user_name}} підписався(-лася) на канал",
+		"subscribed": "{{user_name}} оформив(-ла) підписку",
+		"gifted_subscriptions": "{{user_name}} подарував(-ла) {{total}} підписок",
+		"raided_with": "{{user_name}} здійснив(-ла) рейд із {{viewers}} глядачами",
+		"command_action": "{{user_name}} використав(-ла) команду {{command_name}}",
+		"assistant_ban_user": "Заблоковано користувача {{user_name}}",
+		"assistant_unban_user": "Розблокувати користувача {{user_name}}",
+		"assistant_pin_message": "Закріпити повідомлення {{message}}",
+		"assistant_change_channel_category": "Змінити категорію на {{category}}",
+		"assistant_change_channel_title": "Змінити назву на {{title}}",
+		"assistant_add_emote_mode": "Увімкнути режим лише емодзі",
+		"assistant_remove_emote_mode": "Вимкнути режим лише емодзі",
+		"assistant_add_follow_mode": "Увімкнути режим лише для підписників",
+		"assistant_remove_follow_mode": "Вимкнути режим лише для підписників",
+		"assistant_add_slow_mode": "Увімкнути повільний режим",
+		"assistant_remove_slow_mode": "Вимкнути повільний режим",
+		"assistant_add_subscribe_mode": "Увімкнути режим лише для платних підписників",
+		"assistant_remove_subscribe_mode": "Вимкнути режим лише для платних підписників"
+	},
+	"filter": {
+		"title": "Фільтр повідомлень",
+		"exclude_donations": "Виключити донати",
+		"exclude_follows": "Виключити підписки на канал",
+		"exclude_subscriptions": "Виключити платні підписки",
+		"exclude_raids": "Виключити рейди",
+		"exclude_redemptions": "Виключити використання винагород",
+		"exclude_commands_actions": "Виключити дії команд",
+		"exclude_assistant_actions": "Виключити дії помічника"
+	}
+}

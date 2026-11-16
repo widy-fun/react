@@ -1,0 +1,37 @@
+{
+	"assistant": "Assistant",
+	"message": {
+		"skip": "Ignorer",
+		"replay": "Rejouer",
+		"donated": "{{user_name}} a fait un don de {{amount}} {{currency}}",
+		"redemption": "{{user_name}} a échangé {{title}} pour {{cost}}",
+		"followed": "{{user_name}} vous suit",
+		"subscribed": "{{user_name}} s'est abonné",
+		"gifted_subscriptions": "{{user_name}} a offert {{total}} abonnements",
+		"raided_with": "{{user_name}} a lancé un raid avec {{viewers}} spectateurs",
+		"command_action": "{{user_name}} a utilisé la commande {{command_name}}",
+		"assistant_ban_user": "{{user_name}} a été banni",
+		"assistant_unban_user": "{{user_name}} a été débanni",
+		"assistant_pin_message": "Épingler le message {{message}}",
+		"assistant_change_channel_category": "Changer la catégorie en {{category}}",
+		"assistant_change_channel_title": "Changer le titre en {{title}}",
+		"assistant_add_emote_mode": "Activer le mode émoticônes uniquement",
+		"assistant_remove_emote_mode": "Désactiver le mode émoticônes uniquement",
+		"assistant_add_follow_mode": "Activer le mode abonnés uniquement",
+		"assistant_remove_follow_mode": "Désactiver le mode abonnés uniquement",
+		"assistant_add_slow_mode": "Activer le mode lent",
+		"assistant_remove_slow_mode": "Désactiver le mode lent",
+		"assistant_add_subscribe_mode": "Activer le mode abonnés payants uniquement",
+		"assistant_remove_subscribe_mode": "Désactiver le mode abonnés payants uniquement"
+	},
+	"filter": {
+		"title": "Filtrer les messages",
+		"exclude_donations": "Exclure les dons",
+		"exclude_follows": "Exclure les abonnements gratuits",
+		"exclude_subscriptions": "Exclure les abonnements payants",
+		"exclude_raids": "Exclure les raids",
+		"exclude_redemptions": "Exclure les échanges de récompenses",
+		"exclude_commands_actions": "Exclure les actions des commandes",
+		"exclude_assistant_actions": "Exclure les actions de l'assistant"
+	}
+}

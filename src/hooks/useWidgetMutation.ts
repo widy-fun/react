@@ -1,6 +1,5 @@
-import type { WidgetMutation } from "@widy/sdk";
+import type { IWidgetTransport, WidgetMutation } from "@widy/sdk";
 import { useCallback, useState } from "react";
-import useBridge from "./useBridge";
 
 type MutationState<R> = {
 	loading: boolean;
@@ -17,10 +16,12 @@ type UseWidgetMutationReturn<A, R> = {
 
 export function useWidgetMutation<A, R>({
 	scope,
+	transport
 }: {
 	scope: WidgetMutation;
+	transport:IWidgetTransport
 }): UseWidgetMutationReturn<A, R> {
-	const bridge = useBridge();
+	
 	const [state, setState] = useState<MutationState<R>>({
 		loading: false,
 		error: undefined,
@@ -31,7 +32,7 @@ export function useWidgetMutation<A, R>({
 		async (arg?: A): Promise<R> => {
 			setState({ loading: true, error: undefined, data: undefined });
 			try {
-				const data = await bridge.action<A, R>(scope, arg);
+				const data = await transport.action<A, R>(scope, arg);
 				setState({ loading: false, error: undefined, data });
 				return data;
 			} catch (error) {
@@ -39,7 +40,7 @@ export function useWidgetMutation<A, R>({
 				throw error;
 			}
 		},
-		[scope, bridge],
+		[scope, transport],
 	);
 
 	return { trigger, ...state };

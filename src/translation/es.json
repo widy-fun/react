@@ -1,0 +1,37 @@
+{
+	"assistant": "Asistente",
+	"message": {
+		"skip": "Omitir",
+		"replay": "Reproducir de nuevo",
+		"donated": "{{user_name}} ha donado {{amount}} {{currency}}",
+		"redemption": "{{user_name}} ha canjeado {{title}} por {{cost}}",
+		"followed": "{{user_name}} ha seguido el canal",
+		"subscribed": "{{user_name}} se ha suscrito",
+		"gifted_subscriptions": "{{user_name}} ha regalado {{total}} suscripciones",
+		"raided_with": "{{user_name}} ha hecho una incursión con {{viewers}} espectadores",
+		"command_action": "{{user_name}} ha utilizado el comando {{command_name}}",
+		"assistant_ban_user": "{{user_name}} ha sido expulsado",
+		"assistant_unban_user": "Se ha quitado la expulsión de {{user_name}}",
+		"assistant_pin_message": "Fijar el mensaje {{message}}",
+		"assistant_change_channel_category": "Cambiar la categoría a {{category}}",
+		"assistant_change_channel_title": "Cambiar el título a {{title}}",
+		"assistant_add_emote_mode": "Activar el modo solo emoticonos",
+		"assistant_remove_emote_mode": "Desactivar el modo solo emoticonos",
+		"assistant_add_follow_mode": "Activar el modo solo seguidores",
+		"assistant_remove_follow_mode": "Desactivar el modo solo seguidores",
+		"assistant_add_slow_mode": "Activar el modo lento",
+		"assistant_remove_slow_mode": "Desactivar el modo lento",
+		"assistant_add_subscribe_mode": "Activar el modo solo suscriptores",
+		"assistant_remove_subscribe_mode": "Desactivar el modo solo suscriptores"
+	},
+	"filter": {
+		"title": "Filtrar mensajes",
+		"exclude_donations": "Excluir donaciones",
+		"exclude_follows": "Excluir nuevos seguidores",
+		"exclude_subscriptions": "Excluir suscripciones",
+		"exclude_raids": "Excluir incursiones",
+		"exclude_redemptions": "Excluir canjes",
+		"exclude_commands_actions": "Excluir acciones de comandos",
+		"exclude_assistant_actions": "Excluir acciones del asistente"
+	}
+}

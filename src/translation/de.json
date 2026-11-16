@@ -1,0 +1,37 @@
+{
+	"assistant": "Assistent",
+	"message": {
+		"skip": "Überspringen",
+		"replay": "Erneut abspielen",
+		"donated": "{{user_name}} hat {{amount}} {{currency}} gespendet",
+		"redemption": "{{user_name}} hat {{title}} für {{cost}} eingelöst",
+		"followed": "{{user_name}} folgt jetzt",
+		"subscribed": "{{user_name}} hat ein Abonnement abgeschlossen",
+		"gifted_subscriptions": "{{user_name}} hat {{total}} Abonnements verschenkt",
+		"raided_with": "{{user_name}} hat mit {{viewers}} Zuschauern geraidet",
+		"command_action": "{{user_name}} hat den Befehl {{command_name}} verwendet",
+		"assistant_ban_user": "{{user_name}} wurde gesperrt",
+		"assistant_unban_user": "Sperre für {{user_name}} aufheben",
+		"assistant_pin_message": "Nachricht anheften: {{message}}",
+		"assistant_change_channel_category": "Kategorie ändern zu {{category}}",
+		"assistant_change_channel_title": "Titel ändern zu {{title}}",
+		"assistant_add_emote_mode": "Emote-Modus aktivieren",
+		"assistant_remove_emote_mode": "Emote-Modus deaktivieren",
+		"assistant_add_follow_mode": "Follower-Modus aktivieren",
+		"assistant_remove_follow_mode": "Follower-Modus deaktivieren",
+		"assistant_add_slow_mode": "Slow-Modus aktivieren",
+		"assistant_remove_slow_mode": "Slow-Modus deaktivieren",
+		"assistant_add_subscribe_mode": "Abonnentenmodus aktivieren",
+		"assistant_remove_subscribe_mode": "Abonnentenmodus deaktivieren"
+	},
+	"filter": {
+		"title": "Nachrichten filtern",
+		"exclude_donations": "Spenden ausschließen",
+		"exclude_follows": "Follows ausschließen",
+		"exclude_subscriptions": "Abonnements ausschließen",
+		"exclude_raids": "Raids ausschließen",
+		"exclude_redemptions": "Einlösungen ausschließen",
+		"exclude_commands_actions": "Befehlsaktionen ausschließen",
+		"exclude_assistant_actions": "Assistentenaktionen ausschließen"
+	}
+}

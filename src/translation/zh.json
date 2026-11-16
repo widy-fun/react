@@ -1,0 +1,37 @@
+{
+	"assistant": "助手",
+	"message": {
+		"skip": "跳过",
+		"replay": "重播",
+		"donated": "{{user_name}} 捐赠了 {{amount}} {{currency}}",
+		"redemption": "{{user_name}} 兑换了 {{title}}，花费 {{cost}}",
+		"followed": "{{user_name}} 关注了频道",
+		"subscribed": "{{user_name}} 订阅了频道",
+		"gifted_subscriptions": "{{user_name}} 赠送了 {{total}} 个订阅",
+		"raided_with": "{{user_name}} 带领 {{viewers}} 名观众突袭了频道",
+		"command_action": "{{user_name}} 使用了命令 {{command_name}}",
+		"assistant_ban_user": "已封禁 {{user_name}}",
+		"assistant_unban_user": "已解除对 {{user_name}} 的封禁",
+		"assistant_pin_message": "置顶消息：{{message}}",
+		"assistant_change_channel_category": "将频道分类更改为 {{category}}",
+		"assistant_change_channel_title": "将频道标题更改为 {{title}}",
+		"assistant_add_emote_mode": "启用仅表情模式",
+		"assistant_remove_emote_mode": "关闭仅表情模式",
+		"assistant_add_follow_mode": "启用仅关注者模式",
+		"assistant_remove_follow_mode": "关闭仅关注者模式",
+		"assistant_add_slow_mode": "启用慢速模式",
+		"assistant_remove_slow_mode": "关闭慢速模式",
+		"assistant_add_subscribe_mode": "启用仅订阅者模式",
+		"assistant_remove_subscribe_mode": "关闭仅订阅者模式"
+	},
+	"filter": {
+		"title": "消息筛选",
+		"exclude_donations": "排除捐赠",
+		"exclude_follows": "排除关注",
+		"exclude_subscriptions": "排除订阅",
+		"exclude_raids": "排除突袭",
+		"exclude_redemptions": "排除奖励兑换",
+		"exclude_commands_actions": "排除命令操作",
+		"exclude_assistant_actions": "排除助手操作"
+	}
+}

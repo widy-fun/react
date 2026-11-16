@@ -1,0 +1,37 @@
+{
+	"assistant": "المساعد",
+	"message": {
+		"skip": "تخطي",
+		"replay": "إعادة التشغيل",
+		"donated": "تبرّع {{user_name}} بمبلغ {{amount}} {{currency}}",
+		"redemption": "استبدل {{user_name}} المكافأة {{title}} مقابل {{cost}}",
+		"followed": "بدأ {{user_name}} المتابعة",
+		"subscribed": "اشترك {{user_name}}",
+		"gifted_subscriptions": "أهدى {{user_name}} {{total}} اشتراكًا",
+		"raided_with": "قام {{user_name}} بغارة مع {{viewers}} مشاهدًا",
+		"command_action": "استخدم {{user_name}} الأمر {{command_name}}",
+		"assistant_ban_user": "تم حظر {{user_name}}",
+		"assistant_unban_user": "تم إلغاء حظر {{user_name}}",
+		"assistant_pin_message": "تثبيت الرسالة {{message}}",
+		"assistant_change_channel_category": "تغيير الفئة إلى {{category}}",
+		"assistant_change_channel_title": "تغيير العنوان إلى {{title}}",
+		"assistant_add_emote_mode": "تفعيل وضع الرموز التعبيرية فقط",
+		"assistant_remove_emote_mode": "إلغاء وضع الرموز التعبيرية فقط",
+		"assistant_add_follow_mode": "تفعيل وضع المتابعين فقط",
+		"assistant_remove_follow_mode": "إلغاء وضع المتابعين فقط",
+		"assistant_add_slow_mode": "تفعيل الوضع البطيء",
+		"assistant_remove_slow_mode": "إلغاء الوضع البطيء",
+		"assistant_add_subscribe_mode": "تفعيل وضع المشتركين فقط",
+		"assistant_remove_subscribe_mode": "إلغاء وضع المشتركين فقط"
+	},
+	"filter": {
+		"title": "تصفية الرسائل",
+		"exclude_donations": "استبعاد التبرعات",
+		"exclude_follows": "استبعاد المتابعات",
+		"exclude_subscriptions": "استبعاد الاشتراكات",
+		"exclude_raids": "استبعاد الغارات",
+		"exclude_redemptions": "استبعاد عمليات استبدال المكافآت",
+		"exclude_commands_actions": "استبعاد إجراءات الأوامر",
+		"exclude_assistant_actions": "استبعاد إجراءات المساعد"
+	}
+}

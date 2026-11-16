@@ -1,14 +1,14 @@
-import type { WidgetSubscription } from "@widy/sdk";
-import { useEffect } from "react";
-import useBridge from "./useBridge";
+import type { IWidgetTransport, WidgetSubscription } from "@widy/sdk";
+import { useEffect, useRef } from "react";
 
 export function useWidgetSubscription<T>(
 	scope: WidgetSubscription,
+	transport: IWidgetTransport,
 	handler: (msg: T) => void,
 ) {
-	const bridge = useBridge();
-
+	const handlerRef = useRef(handler);
+	handlerRef.current = handler;
 	useEffect(() => {
-		return bridge.subscribe<T>(scope, handler);
-	}, [scope, bridge, handler]);
+		return transport.subscribe<T>(scope, (msg) => handlerRef.current(msg));
+	}, [scope, transport]);
 }

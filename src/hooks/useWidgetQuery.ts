@@ -1,6 +1,5 @@
-import type { WidgetQuery } from "@widy/sdk";
+import type { IWidgetTransport, WidgetQuery } from "@widy/sdk";
 import { useCallback, useEffect, useState } from "react";
-import useBridge from "./useBridge";
 
 interface IConfig {
 	skip?: boolean;
@@ -8,14 +7,15 @@ interface IConfig {
 
 export function useWidgetQuery<A, R>({
 	scope,
+	transport,
 	arg,
 	config,
 }: {
 	scope: WidgetQuery;
+	transport: IWidgetTransport;
 	arg?: A;
 	config?: IConfig;
 }) {
-	const bridge = useBridge();
 	const [data, setData] = useState<R>();
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState<unknown>();
@@ -27,7 +27,7 @@ export function useWidgetQuery<A, R>({
 		const argObj = argKey ? JSON.parse(argKey) : undefined;
 		setLoading(true);
 		try {
-			const result = await bridge.action<A, R>(scope, argObj);
+			const result = await transport.action<A, R>(scope, argObj);
 			setData(result);
 			return result;
 		} catch (err) {
@@ -35,7 +35,7 @@ export function useWidgetQuery<A, R>({
 		} finally {
 			setLoading(false);
 		}
-	}, [scope, argKey, bridge]);
+	}, [scope, argKey, transport]);
 
 	useEffect(() => {
 		if (skip) return;
