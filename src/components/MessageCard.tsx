@@ -1,6 +1,8 @@
 import { Button, Card, Typography } from "@mui/material";
-import type { IClientMessage, TranslateFn } from "@widy/sdk";
+import type { IClientMessage,  } from "@widy/sdk";
 import { getAlertFromMessage, getTtsFromMessage } from "@widy/sdk";
+import type { TFunction } from "i18next";
+
 import {
 	type ComponentProps,
 	memo,
@@ -39,7 +41,7 @@ const MessageCard = ({
 	startAdornment: ReactNode;
 	endAdornment: ReactNode;
 	messageMedia: ReactElement<ComponentProps<typeof MediaTile>>;
-	t: TranslateFn;
+	t: TFunction;
 }) => {
 	const alert = getAlertFromMessage(message);
 	const tts = getTtsFromMessage(message);

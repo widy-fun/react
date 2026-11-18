@@ -11,15 +11,15 @@ import {
 	type IRedemption,
 	type IUserData,
 	MessageType,
-	type TranslateFn,
 } from "@widy/sdk";
+import type { TFunction } from "i18next";
 
 const MessageText = ({
 	message,
 	t,
 }: {
 	message: IClientMessage;
-	t: TranslateFn;
+	t: TFunction;
 }) => {
 	switch (message.type) {
 		case MessageType.Donation: {

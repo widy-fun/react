@@ -1,6 +1,7 @@
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import { Checkbox, FormGroup, IconButton, Menu, MenuItem } from "@mui/material";
-import type { IMessagesFilter, TranslateFn } from "@widy/sdk";
+import type { IMessagesFilter } from "@widy/sdk";
+import type { TFunction } from "i18next";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setFilter } from "../slices/messagesSlice";
@@ -10,7 +11,7 @@ const MessagesFilter = ({
 	t,
 }: {
 	filter: IMessagesFilter;
-	t: TranslateFn;
+	t: TFunction;
 }) => {
 	const dispatch = useDispatch();
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
