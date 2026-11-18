@@ -90,7 +90,7 @@ const MessageTitle = ({
 			);
 		}
 		case MessageType.AssistantAction: {
-			return <>{t("assistant")}</>;
+			return <>{t("ai_assistant")}</>;
 		}
 		default:
 			return <></>;
