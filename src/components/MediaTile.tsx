@@ -3,11 +3,11 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import { IconButton } from "@mui/material";
 import {
+	formatTime,
 	getColorByMediaType,
 	getMediaFromMessage,
 	type IClientMessage,
 } from "@widy/sdk";
-import MessageDate from "./MessageDate";
 
 const MediaTile = ({
 	message,
@@ -48,7 +48,7 @@ const MediaTile = ({
 							right: 15,
 						}}
 					>
-						<MessageDate createdAt={message.created_at} />
+						{formatTime({ milliseconds: (media.duration ?? 0) * 1000 })}
 					</div>
 					<div
 						style={{
